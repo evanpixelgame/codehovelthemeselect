@@ -1,0 +1,128 @@
+#header {
+  position: absolute;
+  width: 80%;
+  height: 15%;
+  left: 10%;
+  top: 0px;
+
+  background: #343434;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*
+  background: #d9d9d9;
+  mix-blend-mode: multiply;
+  */
+}
+
+.light #header,
+.no-bars-light #header,
+.full-bars-light #header,
+.full-border-light #header {
+  background: #b4b4b4;
+}
+
+.no-bars-dark #header,
+.no-bars-light #header {
+  background: none;
+}
+
+.full-bars-dark #header,
+.full-bars-light #header {
+  width: 100%;
+  left: 0%;
+}
+
+#siteTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+
+  padding-bottom: 3%;
+  padding-left: 1%;
+  color: #ce721d;
+}
+
+.full-bars-dark #siteTitle,
+.full-bars-light #siteTitle {
+  padding-left: 10%;
+}
+
+#navBar {
+  /* NavBarPillBox */
+
+  box-sizing: border-box;
+
+  position: relative;
+  width: 40%;
+  height: 50%;
+
+  background: #f5f5f5;
+  border: 1px solid #d3d3d3;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navBar ul {
+  display: flex; /* Use Flexbox for <ul> */
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+#navBar ul li {
+  margin-right: 20px; /* Adjust spacing between list items */
+}
+
+#navBar ul li:last-child {
+  margin-right: 0; /* Remove margin from last list item */
+}
+
+#navBar ul li a {
+  text-decoration: none; /* Remove underline from links */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  display: flex;
+  align-items: center;
+
+  color: #3b3b3b;
+}
+
+#toggleDiv {
+  /* LightDarkToggle */
+
+  position: relative;
+  width: 13.75%;
+  height: 35%;
+  padding-bottom: 3%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.full-bars-dark #toggleDiv,
+.full-bars-light #toggleDiv {
+  padding-right: 10%;
+}
+
+.icon {
+  left: 95.83%;
+  right: -87.5%;
+  top: 20.83%;
+  bottom: 20.83%;
+  width: 24px;
+  height: 24px;
+}
